@@ -1,0 +1,73 @@
+/* ===== n01 RED THEME ===== */
+:root {
+  --red-dark: #3a0000;
+  --red-deep: #6b0000;
+  --red: #c1121f;
+  --red-bright: #ff1a1a;
+  --text: #ffffff;
+  --gold: #ffd166;
+}
+
+/* Page background */
+html, body {
+  background: radial-gradient(circle at center, var(--red-deep) 0%, var(--red-dark) 100%) !important;
+  color: var(--text) !important;
+  font-family: "Segoe UI", Arial, sans-serif !important;
+}
+
+/* Replace n01's default blue backgrounds with red */
+[style*="background"], [bgcolor] {
+  background-color: var(--red-deep) !important;
+}
+
+/* Scoreboard tables */
+table {
+  background: var(--red-dark) !important;
+  border: 2px solid var(--red-bright) !important;
+  box-shadow: 0 0 20px rgba(255, 26, 26, 0.5) !important;
+}
+th, td {
+  background: transparent !important;
+  color: var(--text) !important;
+  border-color: var(--red) !important;
+}
+th {
+  background: var(--red) !important;
+  font-weight: 700 !important;
+}
+tr:nth-child(even) td {
+  background: rgba(255, 26, 26, 0.08) !important;
+}
+
+/* Score input */
+input, select, textarea {
+  background: #1a0000 !important;
+  color: var(--gold) !important;
+  border: 2px solid var(--red-bright) !important;
+  font-weight: 700 !important;
+}
+input:focus {
+  outline: none !important;
+  box-shadow: 0 0 12px var(--red-bright) !important;
+}
+
+/* Buttons / keypad */
+button, input[type="button"], input[type="submit"] {
+  background: var(--red) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--red-bright) !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+}
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+  background: var(--red-bright) !important;
+  box-shadow: 0 0 10px var(--red-bright) !important;
+}
+
+/* Links */
+a { color: var(--gold) !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--red-dark); }
+::-webkit-scrollbar-thumb { background: var(--red); border-radius: 5px; }
