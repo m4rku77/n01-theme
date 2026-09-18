@@ -17,3 +17,22 @@
   font-size: 2em !important;
   font-weight: 700 !important;
 }
+
+
+/* Center names, photos and leg score vertically */
+#header_table td.player_name,
+#legs {
+  vertical-align: middle !important;
+}
+
+/* Photo, name and flag on one centered line */
+#p1_name, #p2_name {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Remove the empty space under the names */
+#header_table .order:empty {
+  display: none !important;
+}
