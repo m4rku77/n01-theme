@@ -6,7 +6,6 @@
   font-variant-numeric: tabular-nums;
 }
 
-
 /* Hide "First to 4 Legs" */
 #header_table tr:first-child {
   display: none !important;
@@ -17,7 +16,6 @@
   font-size: 2em !important;
   font-weight: 700 !important;
 }
-
 
 /* Center names, photos and leg score vertically */
 #header_table td.player_name,
@@ -37,10 +35,6 @@
   position: relative !important;
   top: 0.5em !important;
 }
-
-.pop180 .who img {
-  width: 14vh; height: 14vh;
-  border-radius: 50%;
 
 /* Remove the empty space under the names */
 #header_table .order:empty {
