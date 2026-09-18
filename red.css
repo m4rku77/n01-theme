@@ -5,3 +5,15 @@
   font-family: "Inter", "Segoe UI", Arial, sans-serif !important;
   font-variant-numeric: tabular-nums;
 }
+
+
+/* Hide "First to 4 Legs" */
+#header_table tr:first-child {
+  display: none !important;
+}
+
+/* Bigger leg score */
+#legs {
+  font-size: 2em !important;
+  font-weight: 700 !important;
+}
