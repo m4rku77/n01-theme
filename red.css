@@ -6,9 +6,10 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Hide "First to 4 Legs" */
-#header_table tr:first-child {
-  display: none !important;
+/* Hide "First to 4 Legs" but keep its space,
+   so n01 always sizes the header the same */
+#header_table tr:first-child td {
+  visibility: hidden !important;
 }
 
 /* Bigger leg score */
@@ -30,10 +31,10 @@
   justify-content: center !important;
 }
 
-/* Move names, photos and leg score down to the middle of the bar */
+/* Shift the names up into the empty title space.
+   transform doesn't change the size n01 measures. */
 #header_table {
-  position: relative !important;
-  top: 0.5em !important;
+  transform: translateY(-0.45em) !important;
 }
 
 /* Remove the empty space under the names */
