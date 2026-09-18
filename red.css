@@ -32,6 +32,12 @@
   justify-content: center !important;
 }
 
+/* Move names, photos and leg score down to the middle of the bar */
+#header_table {
+  position: relative !important;
+  top: 0.5em !important;
+}
+
 /* Remove the empty space under the names */
 #header_table .order:empty {
   display: none !important;
