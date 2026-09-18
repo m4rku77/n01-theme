@@ -38,6 +38,10 @@
   top: 0.5em !important;
 }
 
+.pop180 .who img {
+  width: 14vh; height: 14vh;
+  border-radius: 50%;
+
 /* Remove the empty space under the names */
 #header_table .order:empty {
   display: none !important;
